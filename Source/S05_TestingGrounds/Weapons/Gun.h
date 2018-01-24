@@ -47,14 +47,14 @@ public:
 	class UAnimInstance* AnimInstance;
 
 protected:
-	/** Fires a projectile. */
-	void OnFire();
+	
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-
+	/** Fires a projectile. */
+	void OnFire();
 	
 
 	

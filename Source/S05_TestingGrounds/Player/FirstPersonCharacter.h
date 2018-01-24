@@ -40,6 +40,8 @@ class AFirstPersonCharacter : public ACharacter
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 	TSubclassOf<class AGun> GunBlueprint;
 
+	class UInputComponent* PlayerInputComponent;
+
 	AGun* Gun;
 
 public:
@@ -105,6 +107,7 @@ protected:
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
+	void OnFire();
 	// End of APawn interface
 
 	/* 
